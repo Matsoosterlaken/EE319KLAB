@@ -1,0 +1,13 @@
+--cpu Cortex-M4
+".\startup_tm4c123.o"
+".\main.o"
+".\pll.o"
+".\st7735.o"
+".\slidepot.o"
+".\print.o"
+".\fifo.o"
+".\uart.o"
+--strict --scatter ".\Lab9_C++.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Lab9_C++.map" -o .\Lab9_C++.axf
